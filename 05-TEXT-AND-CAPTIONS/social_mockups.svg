@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- 1. Tweet / X Post Overlay Card (Center screen) -->
+  <g id="tweet_card_overlay" transform="translate(90, 600)" filter="url(#cardShadow)">
+    <rect width="900" height="340" rx="32" fill="#000000" stroke="#2F3336" stroke-width="2" />
+    <!-- Avatar circle -->
+    <circle cx="70" cy="70" r="35" fill="#6366F1" />
+    <!-- Name & Handle -->
+    <text x="125" y="65" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E7E9EA">Elon Musk</text>
+    <!-- Verified Badge -->
+    <circle cx="275" cy="58" r="10" fill="#1D9BF0" />
+    <path d="M 271 58 L 274 61 L 279 55" stroke="#FFFFFF" stroke-width="2.5" fill="none" />
+    <text x="125" y="92" font-family="Arial, sans-serif" font-size="22" fill="#71767B">@elonmusk · 2h</text>
+    <!-- Tweet Body -->
+    <text x="40" y="160" font-family="Arial, sans-serif" font-size="32" fill="#E7E9EA">Artificial Intelligence will automate 90% of</text>
+    <text x="40" y="205" font-family="Arial, sans-serif" font-size="32" fill="#E7E9EA">video editing within the next 2 years.</text>
+    <!-- Stats footer -->
+    <text x="40" y="290" font-family="Arial, sans-serif" font-size="22" fill="#71767B">💬 4.2K    🔁 12.8K    ❤️ 89.4K    📊 2.4M</text>
+  </g>
+
+  <!-- 2. Instagram Comment Bubble Overlay -->
+  <g id="instagram_comment_overlay" transform="translate(140, 1080)" filter="url(#cardShadow)">
+    <rect width="800" height="180" rx="24" fill="#1A1A1A" stroke="#333333" stroke-width="1.5" />
+    <circle cx="60" cy="60" r="28" fill="#EC4899" />
+    <text x="105" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">sarah_vlogs</text>
+    <text x="105" y="95" font-family="Arial, sans-serif" font-size="26" fill="#F0F0F0">Bro this literally blew my mind 🤯🔥</text>
+    <text x="105" y="135" font-family="Arial, sans-serif" font-size="20" fill="#888888">Reply · 45 likes</text>
+    <!-- Heart icon -->
+    <path d="M 740 55 C 740 45 748 40 755 45 C 762 40 770 45 770 55 C 770 70 755 80 755 80 C 755 80 740 70 740 55 Z" fill="#FF2A6D" />
+  </g>
+</svg>

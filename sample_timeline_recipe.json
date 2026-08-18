@@ -1,0 +1,50 @@
+{
+  "source_video": "raw_footage.mp4",
+  "target_resolution": [
+    1080,
+    1920
+  ],
+  "color_grading_lut": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\04-EFFECTS-AND-FILTERS\\3d-luts-cube-files\\cinematic_teal_orange.cube",
+  "bgm_track": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-SOUNDS\\bgm-music-tracks\\bgm_lofi_chill_groove_90bpm.wav",
+  "events": [
+    {
+      "time": 2.45,
+      "action": "trigger_broll",
+      "keyword": "fast",
+      "broll_tags": [
+        "high_speed_bullet_train",
+        "time_lapse_city_traffic"
+      ],
+      "motion": "whip_pan_fast",
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-SOUNDS\\sfx-wav-files\\whoosh_fast.wav",
+      "sticker": "curved_red_arrow"
+    },
+    {
+      "time": 5.8,
+      "action": "trigger_broll",
+      "keyword": "money",
+      "broll_tags": [
+        "cash_counter",
+        "crypto_chart",
+        "luxury_lifestyle",
+        "gold_bars"
+      ],
+      "motion": "snap_zoom_in",
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-SOUNDS\\sfx-wav-files\\coin_collect_arcade.wav",
+      "sticker": "sticker_100"
+    },
+    {
+      "time": 9.2,
+      "action": "trigger_broll",
+      "keyword": "warning",
+      "broll_tags": [
+        "warning_sign",
+        "caution_tape",
+        "red_screen_flash"
+      ],
+      "motion": "snap_zoom_in",
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-SOUNDS\\sfx-wav-files\\error_buzzer_wrong.wav",
+      "sticker": "sticker_warning"
+    }
+  ]
+}

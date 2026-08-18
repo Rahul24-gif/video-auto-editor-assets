@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "category": "broll_pacing_rules",
+  "rules": {
+    "short_form_retention_target": {
+      "ideal_broll_cut_interval_sec": [2.5, 4.5],
+      "max_broll_duration_sec": 3.2,
+      "min_broll_duration_sec": 1.2,
+      "first_hook_broll_timestamp_sec": [0.8, 2.0],
+      "broll_coverage_ratio_of_video": 0.45,
+      "audio_ducking_when_broll_active": false
+    },
+    "ken_burns_motion_presets": {
+      "pan_directions": [
+        {"name": "zoom_in_center", "scale_start": 1.0, "scale_end": 1.15, "pan_x": 0.0, "pan_y": 0.0},
+        {"name": "zoom_out_center", "scale_start": 1.18, "scale_end": 1.02, "pan_x": 0.0, "pan_y": 0.0},
+        {"name": "diagonal_pan_top_left_to_bottom_right", "scale_start": 1.12, "scale_end": 1.22, "pan_x_pct": 6.0, "pan_y_pct": 5.0},
+        {"name": "horizontal_drift_left_to_right", "scale_start": 1.10, "scale_end": 1.10, "pan_x_pct": -8.0, "pan_y_pct": 0.0}
+      ]
+    },
+    "transition_rules": {
+      "default_broll_in_transition": "whoosh_fast",
+      "default_broll_out_transition": "whoosh_subtle",
+      "broll_overlay_blend_mode": "normal"
+    }
+  }
+}

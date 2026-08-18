@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <!-- Gradient for modern speaker name tag -->
+    <linearGradient id="speakerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E2E" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#11111B" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="neonAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="glowDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Template 1: Speaker Name & Role Tag (Bottom-Left) -->
+  <g id="speaker_tag" transform="translate(60, 1550)" filter="url(#glowDrop)">
+    <!-- Accent Line -->
+    <rect x="0" y="0" width="6" height="88" rx="3" fill="url(#neonAccent)" />
+    <!-- Background Card -->
+    <rect x="18" y="0" width="460" height="88" rx="16" fill="url(#speakerGrad)" stroke="#313244" stroke-width="1.5" />
+    <!-- Speaker Name -->
+    <text x="42" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#CDD6F4">ALEX RIVERA</text>
+    <!-- Title / Subtitle -->
+    <text x="42" y="68" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500" fill="#A6ADC8">AI Researcher &amp; Founder</text>
+  </g>
+
+  <!-- Template 2: Social Media Handle Banner (YouTube / Instagram / TikTok) -->
+  <g id="social_handle_tag" transform="translate(60, 1680)" filter="url(#glowDrop)">
+    <rect x="0" y="0" width="380" height="64" rx="32" fill="#181825" stroke="#45475A" stroke-width="1.5" />
+    <!-- Icon Circle -->
+    <circle cx="32" cy="32" r="22" fill="#E11D48" />
+    <!-- Play triangle -->
+    <polygon points="26,20 42,32 26,44" fill="#FFFFFF" />
+    <!-- Social Text -->
+    <text x="68" y="40" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">@AutoVideoEditor</text>
+  </g>
+
+  <!-- Template 3: Pro-Tip / Important Callout Box -->
+  <g id="protip_box" transform="translate(60, 320)" filter="url(#glowDrop)">
+    <rect x="0" y="0" width="960" height="110" rx="20" fill="#181825" stroke="#F59E0B" stroke-width="2.5" />
+    <rect x="0" y="0" width="180" height="40" rx="12" fill="#F59E0B" />
+    <text x="90" y="27" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">PRO TIP #1</text>
+    <text x="32" y="80" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF">Hook your viewer in the first 3 seconds!</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "category": "broll_intelligence",
+  "description": "150+ Spoken trigger keywords mapped to B-Roll search categories, visual overlay styles, Ken Burns motions, and SFX for automated video editing",
+  "dictionary": {
+    "money": {"broll_tags": ["cash_counter", "crypto_chart", "luxury_lifestyle", "gold_bars"], "motion": "snap_zoom_in", "sfx": "coin_collect_arcade", "sticker": "sticker_100"},
+    "rich": {"broll_tags": ["mansion", "sports_car", "private_jet", "champagne"], "motion": "snap_zoom_in", "sfx": "coin_collect_arcade", "sticker": "sticker_100"},
+    "crypto": {"broll_tags": ["bitcoin_chart", "trading_screen", "blockchain_nodes"], "motion": "whip_pan_fast", "sfx": "coin_collect_arcade", "sticker": "sticker_fire"},
+    "profit": {"broll_tags": ["green_stock_chart", "revenue_graph", "calculating_money"], "motion": "snap_zoom_in", "sfx": "fanfare_level_up", "sticker": "sticker_checkmark"},
+    "growth": {"broll_tags": ["growing_plant_timelapse", "upward_trend_line", "rocket_launch"], "motion": "slow_retention_creep", "sfx": "fanfare_level_up", "sticker": "sticker_fire"},
+    "rocket": {"broll_tags": ["space_rocket_liftoff", "nasas_launch_smoke"], "motion": "dynamic_snap_zoom_135", "sfx": "whoosh_laser", "sticker": "sticker_fire"},
+    "fire": {"broll_tags": ["burning_flame_macro", "campfire_sparks", "inferno"], "motion": "snap_zoom_in", "sfx": "whoosh_fast", "sticker": "sticker_fire"},
+    "danger": {"broll_tags": ["hazard_lights", "red_alert_siren", "storm_clouds"], "motion": "earthquake_bass_drop", "sfx": "error_buzzer_wrong", "sticker": "sticker_warning"},
+    "warning": {"broll_tags": ["warning_sign", "caution_tape", "red_screen_flash"], "motion": "snap_zoom_in", "sfx": "error_buzzer_wrong", "sticker": "sticker_warning"},
+    "mistake": {"broll_tags": ["facepalm_person", "crashing_car", "deleted_file_error"], "motion": "earthquake_bass_drop", "sfx": "sad_trombone_fail", "sticker": "sticker_warning"},
+    "fail": {"broll_tags": ["skateboard_fall", "funny_cat_fail", "screen_blue_error"], "motion": "earthquake_bass_drop", "sfx": "sad_trombone_fail", "sticker": "sticker_warning"},
+    "secret": {"broll_tags": ["whispering_person", "opening_safe_lock", "glowing_keyhole"], "motion": "slow_retention_creep", "sfx": "riser_tension_build", "sticker": "badge_no_cap"},
+    "hack": {"broll_tags": ["hacker_typing_matrix", "cyber_terminal", "dark_server_room"], "motion": "snap_zoom_in", "sfx": "glitch_cyber_hit", "sticker": "focus_reticle"},
+    "ai": {"broll_tags": ["neural_network_nodes", "humanoid_robot", "microchip_glowing"], "motion": "whip_pan_fast", "sfx": "hologram_scan_beam", "sticker": "focus_reticle"},
+    "robot": {"broll_tags": ["boston_dynamics_robot", "automated_assembly_line"], "motion": "snap_zoom_in", "sfx": "hologram_scan_beam", "sticker": "focus_reticle"},
+    "speed": {"broll_tags": ["supercar_acceleration", "hyperspace_stars", "runner_sprinting"], "motion": "whip_pan_fast", "sfx": "whoosh_fast", "sticker": "curved_red_arrow"},
+    "fast": {"broll_tags": ["high_speed_bullet_train", "time_lapse_city_traffic"], "motion": "whip_pan_fast", "sfx": "whoosh_fast", "sticker": "curved_red_arrow"},
+    "slow": {"broll_tags": ["snail_moving", "dripping_water_slowmo", "hourglass_sand"], "motion": "slow_retention_creep", "sfx": "clock_tick_loop", "sticker": "focus_reticle"},
+    "time": {"broll_tags": ["vintage_pocket_watch", "clock_ticking_macro", "sun_rising_timelapse"], "motion": "slow_retention_creep", "sfx": "clock_tick_loop", "sticker": "circular_countdown_timer"},
+    "focus": {"broll_tags": ["camera_lens_focus_ring", "archer_aiming_bow", "meditating_person"], "motion": "face_punch_in_120", "sfx": "ding_success_tip", "sticker": "focus_reticle"},
+    "target": {"broll_tags": ["bullseye_dart_hit", "sniper_crosshair", "laser_point"], "motion": "dynamic_snap_zoom_135", "sfx": "laser_zap_pointer", "sticker": "focus_reticle"},
+    "win": {"broll_tags": ["trophy_golden_sparkle", "confetti_stadium", "champion_cheering"], "motion": "snap_zoom_in", "sfx": "crowd_cheer_applause", "sticker": "sticker_100"},
+    "lose": {"broll_tags": ["defeated_athlete_ground", "empty_wallet", "crying_emoji"], "motion": "earthquake_bass_drop", "sfx": "sad_trombone_fail", "sticker": "sticker_warning"},
+    "shocking": {"broll_tags": ["jaw_drop_reaction", "lightning_storm_strike", "breaking_glass"], "motion": "earthquake_bass_drop", "sfx": "bass_drop_boom", "sticker": "sticker_warning"},
+    "insane": {"broll_tags": ["rollercoaster_loop", "extreme_stunt", "explosion_action"], "motion": "dynamic_snap_zoom_135", "sfx": "bass_drop_boom", "sticker": "sticker_fire"},
+    "subscribe": {"broll_tags": ["mouse_clicking_bell", "youtube_subscribe_button_3d"], "motion": "spring_overshoot", "sfx": "fanfare_level_up", "sticker": "sticker_subscribe_pill"}
+  }
+}

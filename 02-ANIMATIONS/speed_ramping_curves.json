@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "category": "speed_ramping",
+  "presets": {
+    "speed_up_silence_150": {
+      "name": "Silence Speed-Up (1.5x)",
+      "video_setpts": "PTS/1.5",
+      "audio_atempo": "atempo=1.5",
+      "best_for": "Speeding through filler words without cutting"
+    },
+    "dramatic_slowmo_50": {
+      "name": "Impact Slow-Motion (0.5x)",
+      "video_setpts": "PTS*2.0",
+      "audio_atempo": "atempo=0.5",
+      "best_for": "Slowing down funny meme face or athletic action moment"
+    },
+    "whip_speed_ramp": {
+      "name": "Whip Speed Ramp (1.0x -> 3.0x -> 1.0x)",
+      "duration_sec": 0.45,
+      "video_expr": "PTS*if(lt(T,0.2),1.0+10.0*T,if(lt(T,0.3),3.0,3.0-10.0*(T-0.3)))",
+      "best_for": "Fast pan transition speed ramp"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <!-- Drop Shadow -->
+    <filter id="stickerShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF1A1A" />
+      <stop offset="50%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFDD00" />
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Viral Flame / Fire Sticker -->
+  <g id="sticker_fire" transform="translate(100, 200)" filter="url(#stickerShadow)">
+    <path d="M 60 140 C 20 120 10 70 40 40 C 45 60 60 70 70 50 C 85 20 60 0 100 0 C 130 30 140 70 120 100 C 130 90 140 80 140 70 C 170 100 150 150 110 160 C 60 170 30 150 60 140 Z" fill="url(#fireGrad)" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round" />
+  </g>
+
+  <!-- 2. "100" Score Sticker -->
+  <g id="sticker_100" transform="translate(320, 200)" filter="url(#stickerShadow)">
+    <rect x="0" y="0" width="180" height="110" rx="16" fill="#E11D48" stroke="#FFFFFF" stroke-width="6" />
+    <text x="90" y="75" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900" fill="#FFFFFF" text-anchor="middle" font-style="italic">100</text>
+    <line x1="20" y1="95" x2="160" y2="95" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. Warning / Caution Badge -->
+  <g id="sticker_warning" transform="translate(560, 200)" filter="url(#stickerShadow)">
+    <polygon points="75,10 145,130 5,130" fill="#FBBF24" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round" />
+    <polygon points="75,25 135,122 15,122" fill="#000000" />
+    <rect x="70" y="55" width="10" height="35" rx="5" fill="#FBBF24" />
+    <circle cx="75" cy="104" r="6" fill="#FBBF24" />
+  </g>
+
+  <!-- 4. Green Success Checkmark -->
+  <g id="sticker_checkmark" transform="translate(780, 200)" filter="url(#stickerShadow)">
+    <circle cx="65" cy="65" r="55" fill="#10B981" stroke="#FFFFFF" stroke-width="6" />
+    <path d="M 38 65 L 56 83 L 92 47" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 5. Subscribe / Follow Animated Pill Button -->
+  <g id="sticker_subscribe_pill" transform="translate(340, 1400)" filter="url(#stickerShadow)">
+    <rect x="0" y="0" width="400" height="96" rx="48" fill="#FF0000" stroke="#FFFFFF" stroke-width="4" />
+    <!-- Bell Icon -->
+    <path d="M 60 48 C 60 38 68 30 78 30 C 88 30 96 38 96 48 L 100 62 L 56 62 Z" fill="#FFFFFF" />
+    <circle cx="78" cy="68" r="4" fill="#FFFFFF" />
+    <text x="120" y="60" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="2">SUBSCRIBE</text>
+  </g>
+</svg>

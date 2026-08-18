@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <!-- Glowing divider stroke -->
+    <filter id="splitGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00F0FF" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Template A: 50/50 Horizontal Dual Speaker Split (Top Speaker + Bottom Speaker) -->
+  <g id="split_50_50_horizontal">
+    <!-- Top Box (Speaker 1): 0 to 955 -->
+    <rect x="0" y="0" width="1080" height="955" fill="none" stroke="#333333" stroke-width="4" />
+    <!-- Center Divider Line -->
+    <line x1="0" y1="960" x2="1080" y2="960" stroke="#00F0FF" stroke-width="8" filter="url(#splitGlow)" />
+    <!-- Bottom Box (Speaker 2): 965 to 1920 -->
+    <rect x="0" y="965" width="1080" height="955" fill="none" stroke="#333333" stroke-width="4" />
+  </g>
+
+  <!-- Template B: Circular Picture-in-Picture Facecam Overlay (Bottom-Right or Top-Right) -->
+  <g id="pip_circle_facecam" transform="translate(680, 1380)">
+    <circle cx="160" cy="160" r="150" fill="none" stroke="#FF007A" stroke-width="8" filter="url(#splitGlow)" />
+  </g>
+</svg>

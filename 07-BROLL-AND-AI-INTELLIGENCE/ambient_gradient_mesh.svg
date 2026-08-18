@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <radialGradient id="blob1" cx="30%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blob2" cx="75%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#831843" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blob3" cx="50%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    <filter id="meshBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+  </defs>
+  
+  <rect width="1080" height="1920" fill="#0A0A0F" />
+  
+  <g filter="url(#meshBlur)">
+    <circle cx="320" cy="480" r="420" fill="url(#blob1)" />
+    <circle cx="820" cy="1180" r="480" fill="url(#blob2)" />
+    <circle cx="540" cy="1620" r="380" fill="url(#blob3)" />
+  </g>
+</svg>

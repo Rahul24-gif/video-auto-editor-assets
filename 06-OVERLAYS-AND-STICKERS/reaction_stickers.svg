@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <filter id="popGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- 1. "VS" Combat / Comparison Fight Badge -->
+  <g id="badge_vs_fight" transform="translate(460, 400)" filter="url(#popGlow)">
+    <circle cx="80" cy="80" r="75" fill="#FF0055" stroke="#FFFFFF" stroke-width="6" />
+    <text x="80" y="105" font-family="Impact, sans-serif" font-size="75" font-weight="900" fill="#FFE600" text-anchor="middle" font-style="italic">VS</text>
+  </g>
+
+  <!-- 2. "CAP / NO CAP" Verification Meme Badge -->
+  <g id="badge_no_cap" transform="translate(120, 420)" filter="url(#popGlow)">
+    <rect width="260" height="84" rx="20" fill="#00F0FF" stroke="#000000" stroke-width="6" />
+    <text x="130" y="58" font-family="Impact, sans-serif" font-size="44" font-weight="900" fill="#000000" text-anchor="middle">NO CAP 🧢</text>
+  </g>
+
+  <!-- 3. Red "RECORDING / LIVE" Blinking Dot Badge (Top-Left) -->
+  <g id="badge_live_rec" transform="translate(80, 80)">
+    <rect width="170" height="52" rx="26" fill="rgba(0,0,0,0.7)" stroke="#FF0000" stroke-width="2" />
+    <circle cx="32" cy="26" r="10" fill="#FF0000" />
+    <text x="58" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">REC</text>
+  </g>
+
+  <!-- 4. 5-Star Rating Star Burst Banner -->
+  <g id="badge_5_stars" transform="translate(680, 420)" filter="url(#popGlow)">
+    <rect width="280" height="70" rx="35" fill="#181825" stroke="#FFE600" stroke-width="3" />
+    <text x="140" y="48" font-family="Arial, sans-serif" font-size="34" fill="#FFE600" text-anchor="middle">⭐⭐⭐⭐⭐</text>
+  </g>
+
+  <!-- 5. Sound Muted Icon Badge -->
+  <g id="badge_sound_muted" transform="translate(940, 80)">
+    <circle cx="35" cy="35" r="30" fill="rgba(0,0,0,0.7)" stroke="#FFFFFF" stroke-width="2" />
+    <polygon points="20,27 30,27 40,18 40,52 30,43 20,43" fill="#FFFFFF" />
+    <line x1="46" y1="24" x2="56" y2="46" stroke="#FF0055" stroke-width="4" stroke-linecap="round" />
+    <line x1="56" y1="24" x2="46" y2="46" stroke="#FF0055" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>

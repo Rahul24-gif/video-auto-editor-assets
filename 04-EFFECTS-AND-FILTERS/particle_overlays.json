@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "category": "particle_overlays",
+  "description": "Procedural formulas and rendering parameters for dynamic visual overlays",
+  "overlays": {
+    "cinematic_film_grain": {
+      "type": "shader_noise",
+      "intensity": 0.08,
+      "blend_mode": "overlay",
+      "ffmpeg_filter": "noise=alls=12:allf=t+u",
+      "best_for": "Giving flat phone video authentic cinematic film texture"
+    },
+    "floating_dust_particles": {
+      "type": "canvas_particles",
+      "count": 45,
+      "color": "rgba(255, 240, 200, 0.4)",
+      "max_radius_px": 3.5,
+      "speed_y": -0.4,
+      "speed_x_drift": 0.15,
+      "blur_px": 2,
+      "blend_mode": "screen",
+      "best_for": "Moody podcast background and aesthetic b-roll"
+    },
+    "celebration_confetti": {
+      "type": "physics_burst",
+      "count": 120,
+      "colors": ["#FF1744", "#FFEA00", "#00E676", "#2979FF", "#D500F9"],
+      "gravity": 0.35,
+      "drag": 0.02,
+      "initial_velocity_min": 12,
+      "initial_velocity_max": 24,
+      "rotation_speed": 0.15,
+      "duration_frames": 90,
+      "best_for": "Milestones, subscriber goals, big wins"
+    },
+    "fire_embers_sparks": {
+      "type": "physics_upward_sparks",
+      "count": 35,
+      "colors": ["#FF3D00", "#FF9100", "#FFEA00"],
+      "speed_y_min": -3.0,
+      "speed_y_max": -7.0,
+      "turbulent_drift": 1.2,
+      "glow_blur_px": 6,
+      "blend_mode": "screen",
+      "best_for": "High-energy gym edits, action clips, rap music highlights"
+    },
+    "light_leak_warm_sweep": {
+      "type": "gradient_sweep",
+      "colors": ["rgba(255, 100, 20, 0.5)", "rgba(255, 200, 50, 0.3)", "transparent"],
+      "angle_deg": 45,
+      "blend_mode": "screen",
+      "duration_sec": 0.6,
+      "best_for": "Sunflare transition cuts and romantic/nostalgic b-roll"
+    }
+  }
+}

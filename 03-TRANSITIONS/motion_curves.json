@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "category": "motion_easing_curves",
+  "curves": {
+    "snap_zoom_in": {
+      "name": "Snap Zoom In (High Impact)",
+      "cubic_bezier": [0.16, 1.0, 0.3, 1.0],
+      "css_timing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "remotion_easing": "Easing.bezier(0.16, 1.0, 0.3, 1.0)",
+      "python_formula": "lambda t: 1.0 - math.pow(1.0 - t, 4.0)",
+      "best_for": "Auto-punch in on face or key talking point"
+    },
+    "spring_overshoot": {
+      "name": "Spring Bounce Overshoot",
+      "cubic_bezier": [0.34, 1.56, 0.64, 1.0],
+      "css_timing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "remotion_easing": "Easing.bezier(0.34, 1.56, 0.64, 1.0)",
+      "python_formula": "lambda t: 1.0 + 2.70158 * math.pow(t - 1.0, 3.0) + 1.70158 * math.pow(t - 1.0, 2.0)",
+      "best_for": "Sticker pop-ins, emojis, badge reveals, like buttons"
+    },
+    "whip_pan_fast": {
+      "name": "Whip Pan Acceleration/Deceleration",
+      "cubic_bezier": [0.7, 0.0, 0.3, 1.0],
+      "css_timing": "cubic-bezier(0.7, 0, 0.3, 1)",
+      "remotion_easing": "Easing.bezier(0.7, 0.0, 0.3, 1.0)",
+      "python_formula": "lambda t: t * t * (3.0 - 2.0 * t)",
+      "best_for": "Fast camera whip transitions"
+    },
+    "cinematic_slow_creep": {
+      "name": "Cinematic Slow Creep Zoom",
+      "cubic_bezier": [0.25, 0.1, 0.25, 1.0],
+      "css_timing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "remotion_easing": "Easing.bezier(0.25, 0.1, 0.25, 1.0)",
+      "python_formula": "lambda t: 1.0 + 0.08 * t",
+      "best_for": "Subtle 108% slow push-in during long sentences to maintain retention"
+    },
+    "impact_shake_decay": {
+      "name": "Exponential Impact Shake Decay",
+      "python_formula": "lambda t, freq=24.0, decay=6.0: math.sin(t * freq * 2 * math.pi) * math.exp(-t * decay)",
+      "best_for": "Screen shake after meme bass drop or punchy word"
+    }
+  }
+}

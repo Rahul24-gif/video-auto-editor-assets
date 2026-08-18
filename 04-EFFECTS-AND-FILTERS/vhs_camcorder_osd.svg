@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <!-- VHS Greenish phosphor glow -->
+    <filter id="vhsGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00FF66" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <g font-family="Courier New, monospace" font-size="34" font-weight="bold" fill="#00FF66" filter="url(#vhsGlow)">
+    <!-- Top-Left: Mode & Play Icon -->
+    <text x="70" y="100">PLAY ▶</text>
+    <text x="70" y="145" font-size="26" fill="#FFFFFF">SP  STEREO</text>
+
+    <!-- Top-Right: Battery Icon -->
+    <g transform="translate(860, 70)">
+      <rect x="0" y="0" width="70" height="34" rx="4" fill="none" stroke="#00FF66" stroke-width="3" />
+      <rect x="70" y="8" width="6" height="18" rx="2" fill="#00FF66" />
+      <rect x="6" y="6" width="38" height="22" fill="#00FF66" />
+    </g>
+
+    <!-- Bottom-Left: Vintage Date & Time -->
+    <text x="70" y="1800">AUG. 18 1998</text>
+    <text x="70" y="1845">06:24:18 PM</text>
+
+    <!-- Bottom-Right: Timecode -->
+    <text x="680" y="1845" fill="#FFFFFF">TC 00:14:28:09</text>
+  </g>
+</svg>

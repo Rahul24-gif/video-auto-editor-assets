@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F051D" />
+      <stop offset="50%" stop-color="#2D114D" />
+      <stop offset="100%" stop-color="#FF2A85" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE600" />
+      <stop offset="50%" stop-color="#FF007A" />
+      <stop offset="100%" stop-color="#7928CA" />
+    </linearGradient>
+  </defs>
+  <!-- Synthwave Sky -->
+  <rect width="1080" height="1100" fill="url(#skyGrad)" />
+  <!-- Retro Sunset -->
+  <circle cx="540" cy="980" r="280" fill="url(#sunGrad)" />
+  <!-- Sun horizontal slices -->
+  <rect x="250" y="880" width="580" height="12" fill="#2D114D" />
+  <rect x="250" y="920" width="580" height="18" fill="#2D114D" />
+  <rect x="250" y="960" width="580" height="26" fill="#2D114D" />
+  
+  <!-- Perspective Floor Grid (Horizon at y=1100) -->
+  <rect x="0" y="1100" width="1080" height="820" fill="#0A0217" />
+  <g stroke="#00F0FF" stroke-width="2" opacity="0.8">
+    <!-- Horizontal receding lines -->
+    <line x1="0" y1="1120" x2="1080" y2="1120" opacity="0.3" />
+    <line x1="0" y1="1160" x2="1080" y2="1160" opacity="0.4" />
+    <line x1="0" y1="1220" x2="1080" y2="1220" opacity="0.5" />
+    <line x1="0" y1="1310" x2="1080" y2="1310" opacity="0.6" />
+    <line x1="0" y1="1440" x2="1080" y2="1440" opacity="0.8" />
+    <line x1="0" y1="1640" x2="1080" y2="1640" opacity="1.0" />
+    <!-- Vanishing perspective lines from center (540, 1100) -->
+    <line x1="540" y1="1100" x2="-200" y2="1920" />
+    <line x1="540" y1="1100" x2="60" y2="1920" />
+    <line x1="540" y1="1100" x2="300" y2="1920" />
+    <line x1="540" y1="1100" x2="540" y2="1920" stroke="#FF007A" stroke-width="3" />
+    <line x1="540" y1="1100" x2="780" y2="1920" />
+    <line x1="540" y1="1100" x2="1020" y2="1920" />
+    <line x1="540" y1="1100" x2="1280" y2="1920" />
+  </g>
+</svg>

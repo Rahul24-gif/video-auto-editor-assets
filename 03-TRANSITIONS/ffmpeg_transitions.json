@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "category": "video_transitions",
+  "description": "Ready-to-use FFmpeg xfade and custom filter_complex transitions for automated video editing",
+  "transitions": [
+    {
+      "id": "zoom_in_snap",
+      "name": "Snap Zoom In",
+      "duration_sec": 0.35,
+      "recommended_sfx": "whoosh_fast",
+      "type": "xfade",
+      "xfade_transition_name": "zoomin",
+      "ffmpeg_filter": "xfade=transition=zoomin:duration=0.35:offset={offset}",
+      "description": "Snappy zoom-in transition into the next scene or b-roll"
+    },
+    {
+      "id": "whip_pan_left",
+      "name": "Whip Pan Left",
+      "duration_sec": 0.30,
+      "recommended_sfx": "whoosh_fast",
+      "type": "xfade",
+      "xfade_transition_name": "slideleft",
+      "ffmpeg_filter": "xfade=transition=slideleft:duration=0.30:offset={offset}",
+      "description": "Fast horizontal whip pan sliding left with motion blur feel"
+    },
+    {
+      "id": "whip_pan_right",
+      "name": "Whip Pan Right",
+      "duration_sec": 0.30,
+      "recommended_sfx": "whoosh_fast",
+      "type": "xfade",
+      "xfade_transition_name": "slideright",
+      "ffmpeg_filter": "xfade=transition=slideright:duration=0.30:offset={offset}",
+      "description": "Fast horizontal whip pan sliding right"
+    },
+    {
+      "id": "slide_up_reveal",
+      "name": "Slide Up Reveal",
+      "duration_sec": 0.35,
+      "recommended_sfx": "whoosh_deep_bass",
+      "type": "xfade",
+      "xfade_transition_name": "slideup",
+      "ffmpeg_filter": "xfade=transition=slideup:duration=0.35:offset={offset}",
+      "description": "Vertical slide upwards to reveal new talking point or full screen b-roll"
+    },
+    {
+      "id": "circle_crop_wipe",
+      "name": "Circle Iris Zoom Wipe",
+      "duration_sec": 0.40,
+      "recommended_sfx": "whoosh_deep_bass",
+      "type": "xfade",
+      "xfade_transition_name": "circleopen",
+      "ffmpeg_filter": "xfade=transition=circleopen:duration=0.40:offset={offset}",
+      "description": "Expanding circle mask wipe (MrBeast style scene change)"
+    },
+    {
+      "id": "diagonal_slash_wipe",
+      "name": "Diagonal Slash Wipe",
+      "duration_sec": 0.30,
+      "recommended_sfx": "laser_zap_pointer",
+      "type": "xfade",
+      "xfade_transition_name": "wipetl",
+      "ffmpeg_filter": "xfade=transition=wipetl:duration=0.30:offset={offset}",
+      "description": "Diagonal 45-degree angle slice wipe across the screen"
+    },
+    {
+      "id": "dip_to_white_flash",
+      "name": "White Flash Impact Dip",
+      "duration_sec": 0.25,
+      "recommended_sfx": "camera_shutter_snapshot",
+      "type": "xfade",
+      "xfade_transition_name": "fadewhite",
+      "ffmpeg_filter": "xfade=transition=fadewhite:duration=0.25:offset={offset}",
+      "description": "High brightness white exposure flash on heavy beat drops or snapshot cuts"
+    },
+    {
+      "id": "radial_clock_wipe",
+      "name": "Radial Clock Wipe",
+      "duration_sec": 0.45,
+      "recommended_sfx": "whoosh_airy",
+      "type": "xfade",
+      "xfade_transition_name": "radial",
+      "ffmpeg_filter": "xfade=transition=radial:duration=0.45:offset={offset}",
+      "description": "Clockwise radial rotation wipe"
+    },
+    {
+      "id": "pixelize_dissolve",
+      "name": "Pixelize Retro Dissolve",
+      "duration_sec": 0.40,
+      "recommended_sfx": "glitch_cyber_hit",
+      "type": "xfade",
+      "xfade_transition_name": "pixelize",
+      "ffmpeg_filter": "xfade=transition=pixelize:duration=0.40:offset={offset}",
+      "description": "Mosaic pixel block dissolve transition"
+    },
+    {
+      "id": "glitch_rgb_split",
+      "name": "RGB Split Glitch Cut",
+      "duration_sec": 0.25,
+      "recommended_sfx": "glitch_cyber_hit",
+      "type": "custom_filter_complex",
+      "ffmpeg_filter": "[0:v]rgbashift=rh=-8:bh=8:rv=4:bv=-4[g1];[1:v]rgbashift=rh=8:bh=-8[g2];[g1][g2]xfade=transition=fade:duration=0.25:offset={offset}",
+      "description": "Chromatic aberration RGB color separation glitch"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "category": "color_grading_filters",
+  "lut_usage_ffmpeg": "-vf \"lut3d=file='05-color-luts-and-filters/cube_files/cinematic_teal_orange.cube'\"",
+  "built_in_ffmpeg_filters": {
+    "cinematic_teal_orange": {
+      "name": "Cinematic Teal & Orange",
+      "ffmpeg_filter": "eq=contrast=1.15:brightness=0.02:saturation=1.2,colorbalance=rs=0.08:gs=0.02:bs=-0.08:rh=-0.04:gh=0.02:bh=0.1",
+      "description": "Warm skin tones with cool teal shadows"
+    },
+    "youtube_vibrant_boost": {
+      "name": "YouTube High Saturation & Contrast",
+      "ffmpeg_filter": "eq=contrast=1.18:brightness=0.01:saturation=1.35:gamma=0.96,unsharp=5:5:0.8:5:5:0.0",
+      "description": "Punchy colors and crisp sharpness for social media shorts"
+    },
+    "moody_dark_film": {
+      "name": "Moody Dark Noir Film",
+      "ffmpeg_filter": "eq=contrast=1.25:brightness=-0.04:saturation=0.82:gamma=0.92,curves=preset=darker",
+      "description": "Dramatic dark contrast with muted colors"
+    },
+    "vintage_vhs_camcorder": {
+      "name": "Vintage 90s VHS Camcorder",
+      "ffmpeg_filter": "eq=contrast=0.95:brightness=0.06:saturation=0.9,curves=r='0/0.05 1/0.95':g='0/0.03 1/1.02':b='0/0.08 1/0.92',noise=alls=15:allf=t+u",
+      "description": "Lifted blacks, retro faded color matrix and analog noise"
+    },
+    "cyberpunk_neon_glow": {
+      "name": "Cyberpunk Neon Matrix",
+      "ffmpeg_filter": "eq=contrast=1.3:saturation=1.5,colorbalance=rs=-0.1:gs=0.15:bs=0.25:rh=0.2:gh=-0.1:bh=0.25",
+      "description": "High contrast electric cyan and magenta split"
+    },
+    "black_and_white_contrast": {
+      "name": "B&W High Contrast Impact",
+      "ffmpeg_filter": "hue=s=0,eq=contrast=1.35:brightness=-0.02",
+      "description": "Pure black and white punch for flashbacks or dramatic punchlines"
+    }
+  }
+}

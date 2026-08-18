@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <filter id="hudGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00FFCC" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- 1. 9:16 Safe Zone Overlay (Instagram Reels / TikTok / YouTube Shorts UI Overlay bounds) -->
+  <g id="safe_zone_guides" stroke="#00FFCC" stroke-width="1.5" stroke-dasharray="8 8" fill="none" opacity="0.4">
+    <!-- Top safe margin (Avoid username/audio banner): 140px -->
+    <line x1="0" y1="140" x2="1080" y2="140" />
+    <!-- Bottom safe margin (Avoid captions/like button/comment bar): 340px from bottom (y=1580) -->
+    <line x1="0" y1="1580" x2="1080" y2="1580" />
+    <!-- Right side margin (Avoid Like, Comment, Share icons): 140px from right (x=940) -->
+    <line x1="940" y1="140" x2="940" y2="1580" />
+  </g>
+
+  <!-- 2. Rule of Thirds Visual Grid (For Auto-Face Center & Framing) -->
+  <g id="rule_of_thirds_grid" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5" fill="none">
+    <line x1="360" y1="0" x2="360" y2="1920" />
+    <line x1="720" y1="0" x2="720" y2="1920" />
+    <line x1="0" y1="640" x2="1080" y2="640" />
+    <line x1="0" y1="1280" x2="1080" y2="1280" />
+  </g>
+
+  <!-- 3. Cinematic 2.39:1 Aspect Ratio Letterbox Crop Bars (Top and Bottom) -->
+  <g id="cinematic_letterbox_bars" fill="#000000">
+    <rect x="0" y="0" width="1080" height="240" />
+    <rect x="0" y="1680" width="1080" height="240" />
+  </g>
+
+  <!-- 4. Cyberpunk / Sci-Fi HUD Corner Brackets -->
+  <g id="hud_corner_brackets" stroke="#00FFCC" stroke-width="3" fill="none" filter="url(#hudGlow)" transform="translate(60, 180)">
+    <!-- Top-Left -->
+    <path d="M 0 40 L 0 0 L 40 0" />
+    <!-- Top-Right -->
+    <path d="M 920 0 L 960 0 L 960 40" />
+    <!-- Bottom-Left -->
+    <path d="M 0 1340 L 0 1380 L 40 1380" />
+    <!-- Bottom-Right -->
+    <path d="M 920 1380 L 960 1380 L 960 1340" />
+  </g>
+</svg>

@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "category": "caption_styles",
+  "styles": {
+    "hormozi_bold": {
+      "name": "Alex Hormozi Viral Style",
+      "font_family": "Montserrat",
+      "font_weight": "900",
+      "font_size_pt": 74,
+      "text_transform": "uppercase",
+      "colors": {
+        "default": "#FFFFFF",
+        "highlight_primary": "#FFE600",
+        "highlight_success": "#00FF66",
+        "highlight_danger": "#FF2A2A"
+      },
+      "stroke": {
+        "color": "#000000",
+        "width_px": 12
+      },
+      "shadow": {
+        "color": "rgba(0,0,0,0.8)",
+        "blur_px": 8,
+        "offset_y_px": 6
+      },
+      "animation": {
+        "type": "scale_pop",
+        "start_scale": 0.8,
+        "peak_scale": 1.2,
+        "settle_scale": 1.0,
+        "duration_ms": 140,
+        "sfx_id": "pop_crisp_caption"
+      },
+      "position": {
+        "align": "center",
+        "vertical_ratio": 0.68
+      }
+    },
+    "mrbeast_pop": {
+      "name": "MrBeast Attention Style",
+      "font_family": "Impact",
+      "font_weight": "bold",
+      "font_size_pt": 80,
+      "text_transform": "uppercase",
+      "colors": {
+        "default": "#FFFFFF",
+        "highlight_primary": "#00F0FF",
+        "highlight_secondary": "#FFF000"
+      },
+      "stroke": {
+        "color": "#000000",
+        "width_px": 14
+      },
+      "shadow": {
+        "color": "#000000",
+        "blur_px": 0,
+        "offset_y_px": 8,
+        "offset_x_px": 6
+      },
+      "animation": {
+        "type": "spring_bounce",
+        "duration_ms": 180,
+        "sfx_id": "pop_bubble_sticker"
+      },
+      "position": {
+        "align": "center",
+        "vertical_ratio": 0.70
+      }
+    },
+    "minimalist_pill": {
+      "name": "Minimalist Dark Pill",
+      "font_family": "Inter",
+      "font_weight": "700",
+      "font_size_pt": 52,
+      "text_transform": "none",
+      "colors": {
+        "default": "#FFFFFF",
+        "highlight_primary": "#60A5FA"
+      },
+      "background_box": {
+        "enabled": true,
+        "color": "rgba(18, 18, 24, 0.82)",
+        "corner_radius_px": 24,
+        "padding_x_px": 32,
+        "padding_y_px": 16,
+        "backdrop_blur_px": 12
+      },
+      "animation": {
+        "type": "fade_slide_up",
+        "duration_ms": 160,
+        "sfx_id": "whoosh_subtle"
+      },
+      "position": {
+        "align": "center",
+        "vertical_ratio": 0.72
+      }
+    },
+    "cyber_typewriter": {
+      "name": "Cyberpunk Terminal Typewriter",
+      "font_family": "Courier New",
+      "font_weight": "bold",
+      "font_size_pt": 56,
+      "text_transform": "uppercase",
+      "colors": {
+        "default": "#00FF66",
+        "highlight_primary": "#00FFFF"
+      },
+      "stroke": {
+        "color": "#002200",
+        "width_px": 4
+      },
+      "glow": {
+        "color": "rgba(0, 255, 100, 0.7)",
+        "blur_px": 16
+      },
+      "animation": {
+        "type": "typewriter_char_by_char",
+        "char_delay_ms": 35,
+        "sfx_id": "typing_keyboard_click"
+      },
+      "position": {
+        "align": "left",
+        "margin_left_px": 80,
+        "vertical_ratio": 0.75
+      }
+    }
+  }
+}

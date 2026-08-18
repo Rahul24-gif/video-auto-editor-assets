@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "category": "camera_zoom_presets",
+  "description": "Formulas & keyframe presets for dynamic auto-zooming and framing",
+  "presets": {
+    "face_punch_in_120": {
+      "name": "Face Punch-In (1.20x)",
+      "zoom_factor": 1.20,
+      "center_x_ratio": 0.50,
+      "center_y_ratio": 0.38,
+      "duration_sec": 0.25,
+      "recommended_sfx": "whoosh_fast",
+      "ffmpeg_crop_filter": "crop=in_w/1.2:in_h/1.2:in_w*0.083:in_h*0.06",
+      "best_for": "Punching in on face when a new key sentence or punchline starts"
+    },
+    "dynamic_snap_zoom_135": {
+      "name": "Extreme Snap Zoom (1.35x)",
+      "zoom_factor": 1.35,
+      "center_x_ratio": 0.50,
+      "center_y_ratio": 0.35,
+      "duration_sec": 0.20,
+      "recommended_sfx": "whoosh_fast",
+      "ffmpeg_crop_filter": "crop=in_w/1.35:in_h/1.35:in_w*0.13:in_h*0.10",
+      "best_for": "Extreme reaction, shocking statement, or meme reaction"
+    },
+    "slow_retention_creep": {
+      "name": "Slow Retention Creep (1.00x -> 1.08x)",
+      "zoom_start": 1.00,
+      "zoom_end": 1.08,
+      "duration_sec": 5.0,
+      "ffmpeg_zoompan_filter": "zoompan=z='min(zoom+0.001,1.08)':d=125:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'",
+      "best_for": "Long speaking segments (prevents viewer drop-off / maintains retention)"
+    },
+    "alternating_ab_camera": {
+      "name": "Alternating A/B Camera Cut",
+      "camera_a": "scale=1080:1920",
+      "camera_b": "crop=in_w/1.18:in_h/1.18:in_w*0.076:in_h*0.05,scale=1080:1920",
+      "cut_interval_rule": "Switch every 2.5 to 4.5 seconds on sentence pauses",
+      "sfx_on_cut": "whoosh_subtle"
+    }
+  }
+}

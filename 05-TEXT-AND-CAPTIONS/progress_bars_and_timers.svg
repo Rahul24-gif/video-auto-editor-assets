@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <linearGradient id="reelProgressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Top Reel / Short Video Progress Bar -->
+  <g id="top_progress_bar">
+    <!-- Track -->
+    <rect x="0" y="0" width="1080" height="12" fill="rgba(255, 255, 255, 0.2)" />
+    <!-- Progress Indicator (Sample at 65%) -->
+    <rect x="0" y="0" width="702" height="12" fill="url(#reelProgressGrad)" />
+  </g>
+
+  <!-- 2. Circular Countdown Timer Badge (Top Right) -->
+  <g id="circular_countdown_timer" transform="translate(940, 120)">
+    <circle cx="50" cy="50" r="42" fill="#11111B" stroke="rgba(255,255,255,0.15)" stroke-width="6" />
+    <!-- Animated Arc -->
+    <circle cx="50" cy="50" r="42" fill="none" stroke="#F59E0B" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="80" stroke-linecap="round" transform="rotate(-90 50 50)" />
+    <text x="50" y="58" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900" fill="#FFFFFF" text-anchor="middle">5s</text>
+  </g>
+</svg>

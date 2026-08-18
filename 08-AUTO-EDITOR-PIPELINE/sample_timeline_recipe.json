@@ -1,0 +1,63 @@
+{
+  "source_video": "raw_footage.mp4",
+  "target_resolution": [
+    1080,
+    1920
+  ],
+  "color_grading_lut": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\05-color-luts-and-filters\\cube_files\\cinematic_teal_orange.cube",
+  "events": [
+    {
+      "time": 3.42,
+      "action": "cut_with_zoom",
+      "zoom_factor": 1.2,
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-sound-effects-sfx\\wav_files\\whoosh_fast.wav",
+      "sfx_start_time": 3.34
+    },
+    {
+      "time": 7.15,
+      "action": "highlight_tip",
+      "caption_style": {
+        "name": "Alex Hormozi Viral Style",
+        "font_family": "Montserrat",
+        "font_weight": "900",
+        "font_size_pt": 74,
+        "text_transform": "uppercase",
+        "colors": {
+          "default": "#FFFFFF",
+          "highlight_primary": "#FFE600",
+          "highlight_success": "#00FF66",
+          "highlight_danger": "#FF2A2A"
+        },
+        "stroke": {
+          "color": "#000000",
+          "width_px": 12
+        },
+        "shadow": {
+          "color": "rgba(0,0,0,0.8)",
+          "blur_px": 8,
+          "offset_y_px": 6
+        },
+        "animation": {
+          "type": "scale_pop",
+          "start_scale": 0.8,
+          "peak_scale": 1.2,
+          "settle_scale": 1.0,
+          "duration_ms": 140,
+          "sfx_id": "pop_crisp_caption"
+        },
+        "position": {
+          "align": "center",
+          "vertical_ratio": 0.68
+        }
+      },
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-sound-effects-sfx\\wav_files\\ding_success_tip.wav",
+      "sfx_start_time": 7.15
+    },
+    {
+      "time": 12.8,
+      "action": "impact_shake",
+      "sfx": "c:\\Users\\ABC\\Downloads\\video-auto-editor-assets\\01-sound-effects-sfx\\wav_files\\bass_drop_boom.wav",
+      "sfx_start_time": 12.8
+    }
+  ]
+}
